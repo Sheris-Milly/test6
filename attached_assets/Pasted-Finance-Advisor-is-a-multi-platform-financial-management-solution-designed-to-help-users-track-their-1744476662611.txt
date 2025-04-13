@@ -1,0 +1,125 @@
+Finance Advisor is a multi-platform financial management solution designed to help users track their portfolios, research market trends, and access personalized financial guidance. Built with a robust multi-agent AI system and modern web/mobile technologies, Finance Advisor delivers a seamless user experience for both beginners and seasoned investors.
+
+Multi-Platform Availability
+
+Web: Built on React + Next.js for a dynamic, responsive interface.
+Mobile
+Supabase Integration
+
+User Authentication: Supabase handles user sessions and authorization.
+Data Persistence: All portfolios, user profiles, and historical logs stored securely in Supabase.
+Real-Time Updates: Take advantage of Supabase’s real-time features for live portfolio and market updates.
+Python Backend & Multi-Agent AI
+
+FastAPI / Flask: API layer for orchestrating data from RapidAPI, Stock News API, and AI interactions.
+LangChain Agents: Enhanced multi-agent system provides specialized financial services (detailed below).
+Gemini 2.0 Flash API: Integrates advanced NLP for natural language queries and personalized recommendations.
+Sign Up / Login: Users register and authenticate securely via Supabase.
+User-Specific Data: Each user’s portfolios, watchlists, and chat history are isolated and stored in Supabase.
+Real-Time Portfolio Insights: Monitor overall performance, daily changes, and total returns.
+Market Indices Overview: Track major indices with live data feeds.
+Asset Allocation Visualization: Instantly see how your investments are distributed across different classes.
+Top Performing Stocks: Quick snapshots of market leaders.
+Recent Financial News: Integrated financial news to stay up-to-date on market happenings.
+Detailed Tracking: View individual holdings, cost basis, current value, and profit/loss.
+Add/Remove Stocks: Real-time updates leveraging RapidAPI’s finance data.
+Allocation Analysis & Rebalancing: Automated tools suggest optimal portfolio distribution.
+Market Benchmark Comparison: Compare your performance to leading indices.
+Historical Performance Charts: Visualize trends over days, months, or years.
+Real-Time Stock Data: Live quotes, volume, and price charts.
+Multiple Timeframe Analysis: 1D, 5D, 1M, 3M, 6M, 1Y, or MAX data for deeper insights.
+Financial Metrics: Access P/E ratio, EPS, market cap, trading volume, and more.
+Latest Stock News: Stay informed with direct news feeds for individual stocks.
+1. Portfolio Management Agent
+
+Tracks detailed holdings and performance.
+Offers rebalancing suggestions based on risk tolerance and goals.
+Benchmarks portfolio against market indices.
+2. Market Research Agent
+
+Fetches real-time stock data and charts for custom timeframes.
+Provides key metrics and highlights unusual trading volumes or patterns.
+Integrates market-relevant news headlines.
+3. AI Financial Advisor Agent
+
+Delivers personalized investment recommendations.
+Responds to natural language queries (e.g., “Should I sell my tech stocks now?”).
+Offers financial planning, tax optimization, and retirement advice.
+4. Financial Planning Agent
+
+Retirement calculator with user-defined parameters (income, retirement age, etc.).
+Budget planner for monthly income, expenses, and savings.
+Goal tracking and interactive charts for long-term projections.
+Retirement Calculator: Estimate future savings and required contributions.
+Budget Planner: Organize monthly expenses, set savings targets, and track progress.
+Goal Setting & Tracking: Define financial milestones (e.g., buying a house, starting a business).
+Interactive Projections: Visual charts to visualize how small changes can impact long-term goals.
+The central “manager” coordinating all other agents. Maintains conversation context, ensuring user questions route to the right specialized agent. Synthesizes outputs into coherent, personalized advice for each user.
+
+React + Next.js
+Server-Side Rendering (SSR) for fast load times.
+Tailwind CSS for utility-first styling.
+Framer Motion for elegant animations.
+Recharts for dynamic data visualization.
+shadcn/ui for consistent, accessible components.
+1.Django or FastAPI (Python): Rapid, secure development of RESTful APIs. Integrates easily with the multi-agent AI system. 2.Supabase: Handles user authentication, role management, and real-time data syncing. Serves as the central database (PostgreSQL) for portfolios, user info, and transaction logs. 3.
+
+Central API orchestrator for all data requests.
+Integrates with LangChain for multi-agent functionalities.
+Ensures minimal overhead and optimized calls to external APIs.
+Supabase
+Primary database for user data, portfolios, and transaction records.
+Manages authentication tokens and refresh cycles.
+Real-time features for instant updates on market changes and user portfolios.
+RapidAPI (Real-Time Finance Data) (https://rapidapi.com/letscrape-6bRBa3QguO5/api/real-time-finance-data)
+Stock quotes, indices data, and real-time updates.
+Stock News API
+Curated news articles for financial insights.
+Gemini 2.0 Flash API
+Natural Language Processing for conversation-based financial advice.
+Personalized investment and tax optimization suggestions.
+LangChain
+Facilitates a multi-agent approach for specialized tasks (portfolio management, market research, financial planning, etc.).
+Provides conversation memory for context-aware interactions.
+show how our app work and the inovatif multi agent system and then technolgies used ,the team Our Mission: To simplify and enhance personal finance by offering powerful tools that empower users to make informed investment decisions.
+
+Our Team:
+
+Imad Agjoud – Product & Vision Lead Defines platform direction, ensuring Finance Advisor remains a leader in innovation and user satisfaction.
+
+Douae Imloul – AI & Data Specialist Develops the multi-agent AI framework, ensuring high-quality data pipelines for accurate financial insights.
+
+Widad Rachidi– Frontend & UX Engineer Crafts the sleek, animation-rich UI, ensuring seamless interaction and responsive design across devices.
+
+Adam Affia – Backend & Security Engineer Oversees Django/FastAPI architecture, API integrations, and robust security protocols.
+
+then add a speacial thanks to our Encadrant Pr.Lamrani ALLAOUI
+
+Advanced Animations & Polished UI Every user interaction feels smooth, intuitive, and delightful. | Name | Hex | Usage | |-----------|-----------|-------------------------------------------| | Primary | #10b981 | Main actions and positive trends | | Secondary | #3b82f6 | Secondary elements, links, charts | | Accent | #8b5cf6 | Highlights and accent pieces | | Warning | #f59e0b | Warnings and notifications | | Danger | #ef4444 | Negative trends and error states |
+
+Dark Mode
+| Name | Hex | Usage | |-------------------|------------|---------------------------------------| | Background | #000000 | Main background | | Card Background | #18181b | Cards and components | | Border | #27272a | Dividers and outlines | | Text Primary | #ffffff | Core text | | Text Secondary | #a1a1aa | Secondary/muted text |
+
+Charts & Visualization
+
+Vibrant, contrasting colors for portfolio allocation segments, performance lines, and highlights.
+Positive/Negative trends differentiated by Emerald (#10b981) and Red (#ef4444).
+Font Family: Inter (Sans-serif)
+Heading Sizes:
+H1: 30px, H2: 24px, H3: 20px, H4: 16px
+Body Text: 14px
+Small Text: 12px
+Subtle transitions (0.3s) for hover effects and interactive elements.
+Data refresh animations to highlight updated portfolio stats.
+Smooth fade and slide transitions for page navigation.
+Deployment
+
+Web: Vercel or Netlify for Next.js.
+Supabase: Hosted Supabase instance for real-time database features.
+Continuous Integration/Continuous Deployment (CI/CD)
+
+Automate testing and deployment using GitHub Actions,
+Ensure environment variables and secrets are securely stored.
+Finance Advisor provides a one-stop solution for investors of all levels, offering powerful tools for portfolio management, market research, and personalized financial advice. By leveraging Supabase for data storage, a Python-based backend, and a robust multi-agent AI system via LangChain and Gemini 2.0 Flash API, Finance Advisor delivers both stability and innovation.
+
+With multi-platform support, a sophisticated AI advisory engine, and user-centric features like budgeting tools and retirement planning, Finance Advisor stands out as a modern, reliable, and intelligent financial assistant for the digital age.
